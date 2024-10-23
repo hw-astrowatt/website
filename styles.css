@@ -40,11 +40,16 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 7.5rem;
+}
+
 body {
   line-height: 1.5;
   font-size: var(--font-size-400);
-  -webkit-font-smoothing: antialiased;
   font-family: var(--font-family);
+  -webkit-font-smoothing: antialiased;
 }
 
 @media only screen and (min-width: 640px) {
@@ -114,23 +119,6 @@ ul {
   justify-content: center;
   align-items: center;
 }
-
-/* .grid-6 {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-}
-
-.grid-span-1 {
-  grid-column: span 1;
-}
-
-.grid-span-2 {
-  grid-column: span 2;
-}
-
-.grid-span-4 {
-  grid-column: span 4;
-} */
 
 /* 
   utility classes: transition
