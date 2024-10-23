@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --color-primary-1: #031B39;
+  --color-primary-2: #0A3E65;
+  --color-primary-3: #C4CEDE;
+  --color-dark: #000000;
+  --color-light: #FFFFFF;
+  --font-family: "Work Sans", Arial, Helvetica, sans-serif;
+}
+
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+  With Tweaks
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: var(--font-family);
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* 
+  utility classes: containers
+*/
+.container {
+  display: block;
+  width: 100%;
+  max-width: 1512px;
+  padding: 0 0.75rem;
+  margin: auto;
+}
+
+/* 
+  utility classes: font sizes
+*/
+.text-400 {
+  font-size: 1.25rem;
+}
+
+.text-500 {
+  font-size: 1.5rem;
+}
+
+.text-700 {
+  font-size: 2.5rem;
+}
+
+.text-800 {
+  font-size: 4rem;
+}
+
+/* 
+  utility classes: font weights
+*/
+.text-normal {
+  font-weight: 400;
+}
+
+.text-bold {
+  font-weight: 700;
+}
+
+/* 
+  utility classes: colors
+*/
+.text-primary-1 {
+  color: var(--color-primary-1);
+}
+
+.text-primary-2 {
+  color: var(--color-primary-2);
+}
+
+.text-primary-3 {
+  color: var(--color-primary-3);
+}
+
+.text-dark {
+  color: var(--color-dark);
+}
+
+.text-light {
+  color: var(--color-light);
+}
+
+.bg-primary-1 {
+  background-color: var(--color-primary-1);
+}
+
+.bg-primary-2 {
+  background-color: var(--color-primary-2);
+}
+
+.bg-primary-3 {
+  background-color: var(--color-primary-3);
+}
+
+.bg-dark {
+  background-color: var(--color-dark);
+}
+
+.bg-light {
+  background-color: var(--color-light);
+}
+
