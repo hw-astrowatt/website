@@ -105,7 +105,7 @@ ul {
 }
 
 .container-2 > * + * {
-  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
 }
 
 .flex-center {
@@ -114,6 +114,23 @@ ul {
   justify-content: center;
   align-items: center;
 }
+
+/* .grid-6 {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.grid-span-1 {
+  grid-column: span 1;
+}
+
+.grid-span-2 {
+  grid-column: span 2;
+}
+
+.grid-span-4 {
+  grid-column: span 4;
+} */
 
 /* 
   utility classes: transition
@@ -124,6 +141,13 @@ ul {
 
 .transition-opacity:hover {
   opacity: 60%;
+}
+
+/* 
+  utility classes: line-height
+*/
+.line-height-normal {
+  line-height: normal;
 }
 
 /* 
@@ -229,7 +253,7 @@ ul {
 }
 
 /* 
-  nav
+  Nav
 */
 .nav {
   min-height: 5.25rem;
@@ -292,4 +316,16 @@ ul {
 
 .heading-inner-2 .star-2 {
   transform: translateY(1.25rem);
+}
+
+/* 
+  "Who Are We" Section
+*/
+.who-are-we {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.who-are-we > * {
+  grid-column: 1 / span 4;
 }
