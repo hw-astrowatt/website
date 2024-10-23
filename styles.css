@@ -42,7 +42,7 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 7.5rem;
+  scroll-padding-top: 7rem;
 }
 
 body {
@@ -240,6 +240,40 @@ ul {
   background-color: var(--color-light);
 }
 
+/*
+  Components
+*/
+.form-input {
+  border: 1px solid var(--color-dark);
+  border-radius: 0;
+  padding: 0.125rem 0.75rem;
+}
+
+.form-input:focus {
+  outline: 2px solid var(--color-dark);
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 10rem;
+  max-height: 25rem;
+}
+
+.btn {
+  padding: 0.25rem 0.75rem;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 0.5rem;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.btn:hover {
+  opacity: 60%;
+}
+
 /* 
   Nav
 */
@@ -356,4 +390,65 @@ ul {
   .what-we-do > .details {
     grid-column: 3 / span 4;
   }
+}
+
+/* 
+  "Talk To Us" Section
+*/
+.talk-to-us > * + * {
+  margin-top: 1rem;
+}
+
+.talk-to-us form {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.talk-to-us form [name="name"] {
+  grid-column: 1 / span 3;
+}
+
+@media only screen and (min-width: 768px) {
+  .talk-to-us form [name="name"] {
+    grid-column: 1 / span 2;
+  }
+}
+
+.talk-to-us form [name="email"] {
+  grid-column: 1 / span 4;
+}
+
+@media only screen and (min-width: 768px) {
+  .talk-to-us form [name="email"] {
+    grid-column: 3 / span 2;
+  }
+}
+
+.talk-to-us form [name="subject"] {
+  grid-column: 1 / span 4;
+}
+
+@media only screen and (min-width: 768px) {
+  .talk-to-us form [name="subject"] {
+    grid-column: 1 / span 3;
+  }
+}
+
+.talk-to-us form [name="message"] {
+  grid-column: 1 / span 4;
+}
+
+@media only screen and (min-width: 768px) {
+  .talk-to-us form [name="message"] {
+    grid-column: 1 / span 3;
+  }
+}
+
+.talk-to-us form .btn {
+  grid-column: 3 / span 2;
+}
+
+.talk-to-us form .btn .shooting-star {
+  max-height: 1.5rem;
 }
