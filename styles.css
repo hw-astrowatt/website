@@ -92,10 +92,12 @@ ul {
 /* 
   utility classes: basic layout
 */
+/* TODO combine containers? */
 .container {
   display: block;
   width: 100%;
   max-width: 984px;
+  /* TODO what size? */
   /* max-width: 1512px; */
   padding: 0 1.5rem;
   margin: auto;
@@ -104,13 +106,14 @@ ul {
 .container-2 {
   display: block;
   width: 100%;
+  /* TODO what size? */
   max-width: 984px;
-  padding: 2.5rem 0.75rem;
+  padding: 3.75rem 1.5rem 4rem;
   margin: auto;
 }
 
 .container-2 > * + * {
-  margin-top: 1.5rem;
+  margin-top: 3.75rem;
 }
 
 .flex-center {
@@ -132,17 +135,18 @@ ul {
 }
 
 /* 
-  utility classes: line-height
-*/
-.line-height-normal {
-  line-height: normal;
-}
-
-/* 
   utility classes: text style
 */
 .text-nowrap {
   text-wrap: nowrap;
+}
+
+.line-height-normal {
+  line-height: normal;
+}
+
+.text-justify {
+  text-align: justify;
 }
 
 .list-style-none {
@@ -288,6 +292,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 2.5rem;
 }
 
 .nav-links {
@@ -297,20 +302,11 @@ ul {
 @media only screen and (min-width: 640px) {
   .nav-links {
     display: flex;
+    justify-content: space-between;
     gap: 1rem;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .nav-links {
-    gap: 2rem;
-  }
-}
-
-@media only screen and (min-width: 1280px) {
-  /* TODO too wide? */
-  .nav-links {
-    gap: 7.5rem;
+    width: 100%;
+    /* TODO determine max-width, which indirectly determines spacing between links */
+    max-width: 35rem;
   }
 }
 
@@ -376,7 +372,7 @@ ul {
 
 .what-we-do > .shooting-star-round {
   justify-self: end;
-  transform: translateY(1rem);
+  transform: translateY(1rem) translateX(-1rem);
 }
 
 @media only screen and (min-width: 768px) {
@@ -387,7 +383,7 @@ ul {
 }
 
 @media only screen and (min-width: 768px) {
-  .what-we-do > .details {
+  .what-we-do > .what-we-do-inner {
     grid-column: 3 / span 4;
   }
 }
@@ -399,56 +395,56 @@ ul {
   margin-top: 1rem;
 }
 
-.talk-to-us form {
+.talk-to-us .contact-form {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1.5rem;
 }
 
-.talk-to-us form [name="name"] {
+.talk-to-us [name="name"] {
   grid-column: 1 / span 3;
 }
 
 @media only screen and (min-width: 768px) {
-  .talk-to-us form [name="name"] {
+  .talk-to-us [name="name"] {
     grid-column: 1 / span 2;
   }
 }
 
-.talk-to-us form [name="email"] {
+.talk-to-us [name="email"] {
   grid-column: 1 / span 4;
 }
 
 @media only screen and (min-width: 768px) {
-  .talk-to-us form [name="email"] {
+  .talk-to-us [name="email"] {
     grid-column: 3 / span 2;
   }
 }
 
-.talk-to-us form [name="subject"] {
+.talk-to-us [name="subject"] {
   grid-column: 1 / span 4;
 }
 
 @media only screen and (min-width: 768px) {
-  .talk-to-us form [name="subject"] {
+  .talk-to-us [name="subject"] {
     grid-column: 1 / span 3;
   }
 }
 
-.talk-to-us form [name="message"] {
+.talk-to-us [name="message"] {
   grid-column: 1 / span 4;
 }
 
 @media only screen and (min-width: 768px) {
-  .talk-to-us form [name="message"] {
+  .talk-to-us [name="message"] {
     grid-column: 1 / span 3;
   }
 }
 
-.talk-to-us form .btn {
+.talk-to-us .btn {
   grid-column: 3 / span 2;
 }
 
-.talk-to-us form .btn .shooting-star {
+.talk-to-us .btn .shooting-star {
   max-height: 1.5rem;
 }
