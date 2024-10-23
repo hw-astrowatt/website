@@ -259,6 +259,7 @@ ul {
   min-height: 5.25rem;
   position: sticky;
   top: 0;
+  z-index: 20;
 }
 
 .nav-inner {
@@ -323,9 +324,48 @@ ul {
 */
 .who-are-we {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
 }
 
-.who-are-we > * {
-  grid-column: 1 / span 4;
+@media only screen and (min-width: 768px) {
+  .who-are-we {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .who-are-we > * {
+    grid-column: 1 / span 4;
+  }
+}
+
+/* 
+  "What We Do" Section
+*/
+.what-we-do {
+  display: grid;
+  gap: 1.5rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .what-we-do {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+.what-we-do > .shooting-star-round {
+  justify-self: end;
+  transform: translateY(1rem);
+}
+
+@media only screen and (min-width: 768px) {
+  .what-we-do > .shooting-star-round {
+    grid-column: 2 / span 1;
+    transform: translateY(2rem);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .what-we-do > .details {
+    grid-column: 3 / span 4;
+  }
 }
