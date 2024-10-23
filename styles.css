@@ -1,12 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* 
+  Breakpoints:
+  - sm: 640px
+  - md: 768px
+  - lg: 1024px
+  - xl: 1280px
+  - 2xl: 1512px
+*/
+
 :root {
   --color-primary-1: #031B39;
   --color-primary-2: #0A3E65;
   --color-primary-3: #C4CEDE;
   --color-dark: #000000;
   --color-light: #FFFFFF;
+
   --font-family: "Work Sans", Arial, Helvetica, sans-serif;
+
+  --font-size-400: 1.25rem;
+  --font-size-500: 1.5rem;
+  --font-size-700: 2.5rem;
+  --font-size-800: 4rem;
 }
 
 /*
@@ -23,8 +38,9 @@
   padding: 0;
 }
 
-html, body {
+body {
   line-height: 1.5;
+  font-size: var(--font-size-400);
   -webkit-font-smoothing: antialiased;
   font-family: var(--font-family);
 }
@@ -51,15 +67,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
+  color: var(--color-dark);
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 /* 
-  utility classes: containers
+  utility classes: basic layout
 */
 .container {
   display: block;
@@ -69,23 +86,29 @@ ul {
   margin: auto;
 }
 
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* 
   utility classes: font sizes
 */
 .text-400 {
-  font-size: 1.25rem;
+  font-size: var(--font-size-400);
 }
 
 .text-500 {
-  font-size: 1.5rem;
+  font-size: var(--font-size-500);
 }
 
 .text-700 {
-  font-size: 2.5rem;
+  font-size: var(--font-size-700);
 }
 
 .text-800 {
-  font-size: 4rem;
+  font-size: var(--font-size-800);
 }
 
 /* 
@@ -142,3 +165,51 @@ ul {
   background-color: var(--color-light);
 }
 
+/* 
+  nav
+*/
+.nav {
+  min-height: 5.25rem;
+  position: sticky;
+  top: 0;
+}
+
+.nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-links {
+  display: none;
+  list-style: none;
+}
+
+@media only screen and (min-width: 640px) {
+  .nav-links {
+    display: flex;
+    gap: 1rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .nav-links {
+    gap: 2rem;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  /* TODO too wide? */
+  .nav-links {
+    gap: 7.5rem;
+  }
+}
+
+.nav-links a {
+  transition: opacity 0.2s ease;
+  color: var(--color-light);
+}
+
+.nav-links a:hover {
+  opacity: 60%;
+}
