@@ -6,7 +6,6 @@
   - md: 768px
   - lg: 1024px
   - xl: 1280px
-  - 2xl: 1512px
 */
 
 :root {
@@ -92,27 +91,19 @@ ul {
 /* 
   utility classes: basic layout
 */
-/* TODO combine containers? */
 .container {
   display: block;
   width: 100%;
-  max-width: 984px;
-  /* TODO what size? */
-  /* max-width: 1512px; */
-  padding: 0 1.5rem;
+  max-width: 1280px;
+  padding: 0 2rem;
   margin: auto;
 }
 
-.container-2 {
-  display: block;
-  width: 100%;
-  /* TODO what size? */
-  max-width: 984px;
-  padding: 3.75rem 1.5rem 4rem;
-  margin: auto;
+.main-container {
+  padding: 3.75rem 2rem 4rem;
 }
 
-.container-2 > * + * {
+.main-container > * + * {
   margin-top: 3.75rem;
 }
 
@@ -295,6 +286,10 @@ ul {
   gap: 2.5rem;
 }
 
+.nav-logo {
+  flex-shrink: 0.75;
+}
+
 .nav-links {
   display: none;
 }
@@ -305,8 +300,7 @@ ul {
     justify-content: space-between;
     gap: 1rem;
     width: 100%;
-    /* TODO determine max-width, which indirectly determines spacing between links */
-    max-width: 35rem;
+    max-width: 25rem;
   }
 }
 
@@ -338,20 +332,20 @@ ul {
 }
 
 /* 
-  "Who Are We" Section
+  "Who We Are" Section
 */
-.who-are-we {
+.who-we-are {
   display: grid;
 }
 
 @media only screen and (min-width: 768px) {
-  .who-are-we {
+  .who-we-are {
     grid-template-columns: repeat(6, 1fr);
   }
 }
 
 @media only screen and (min-width: 768px) {
-  .who-are-we > * {
+  .who-we-are > * {
     grid-column: 1 / span 4;
   }
 }
