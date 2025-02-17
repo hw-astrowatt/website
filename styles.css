@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-/*
+/* 
   Breakpoints:
   - sm: 640px
   - md: 768px
@@ -84,12 +84,11 @@ a {
   color: var(--color-dark);
 }
 
-/*
 ul {
   list-style: none;
-}*/
+}
 
-/*
+/* 
   utility classes: basic layout
 */
 .container {
@@ -115,7 +114,7 @@ ul {
   align-items: center;
 }
 
-/*
+/* 
   utility classes: transition
 */
 .transition-opacity {
@@ -126,7 +125,7 @@ ul {
   opacity: 60%;
 }
 
-/*
+/* 
   utility classes: text style
 */
 .text-nowrap {
@@ -145,7 +144,7 @@ ul {
   list-style: none;
 }
 
-/*
+/* 
   utility classes: font sizes
 */
 .text-sm {
@@ -182,7 +181,7 @@ ul {
   font-size: var(--font-size-900);
 }
 
-/*
+/* 
   utility classes: font weights
 */
 .text-normal {
@@ -193,7 +192,7 @@ ul {
   font-weight: 700;
 }
 
-/*
+/* 
   utility classes: colors
 */
 .text-primary-1 {
@@ -270,7 +269,7 @@ ul {
   opacity: 60%;
 }
 
-/*
+/* 
   Nav
 */
 .nav {
@@ -305,7 +304,7 @@ ul {
   }
 }
 
-/*
+/* 
   Heading
 */
 .heading-inner-1 {
@@ -332,7 +331,7 @@ ul {
   transform: translateY(1.25rem);
 }
 
-/*
+/* 
   "Who We Are" Section
 */
 .who-we-are {
@@ -351,7 +350,7 @@ ul {
   }
 }
 
-/*
+/* 
   "What We Do" Section
 */
 .what-we-do {
@@ -383,7 +382,7 @@ ul {
   }
 }
 
-/*
+/* 
   "Talk To Us" Section
 */
 .talk-to-us > * + * {
