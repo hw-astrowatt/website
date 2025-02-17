@@ -84,13 +84,13 @@ a {
   color: var(--color-dark);
 }
 
-ul {
+ul .text-ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-li {
+li .text-ul {
   display: block;
   background-image: url('/assets/shooting-star.svg');
   background-repeat: no-repeat;
