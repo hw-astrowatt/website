@@ -84,10 +84,21 @@ a {
   color: var(--color-dark);
 }
 
-ul {
-  list-style-image: none;
+ul .text-ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
+li .text-ul {
+  display: block;
+  background-image: url('/assets/shooting-star.svg');
+  background-repeat: no-repeat;
+  background-position: left top;
+  height: 24px;
+  padding-left: 44px;
+  padding-top: 5px;
+}
 
 /*
   utility classes: basic layout
