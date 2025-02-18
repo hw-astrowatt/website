@@ -80,12 +80,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
-  text-decoration: none;
   color: var(--color-dark);
+  transition: opacity 0.2s ease;
 }
 
-ul {
-  list-style: none;
+a:hover {
+  opacity: 60%;
 }
 
 /* 
@@ -112,6 +112,41 @@ ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+/* 
+  utility classes: padding
+*/
+.pl-1 {
+  padding-left: 0.5rem;
+}
+
+.pl-2 {
+  padding-left: 1rem;
+}
+
+.pl-3 {
+  padding-left: 1.5rem;
+}
+
+.pl-4 {
+  padding-left: 2rem;
+}
+
+.pl-5 {
+  padding-left: 2.5rem;
+}
+
+.pl-6 {
+  padding-left: 3rem;
+}
+
+.pl-7 {
+  padding-left: 3.5rem;
+}
+
+.pl-8 {
+  padding-left: 4rem;
 }
 
 /* 
@@ -269,6 +304,21 @@ ul {
   opacity: 60%;
 }
 
+.list-custom-icon {
+  list-style: none;
+}
+
+.list-custom-icon > .list-group {
+  display: flex;
+  gap: 1rem;
+  align-items: start;
+}
+
+.list-custom-icon > .list-group > .list-marker {
+  width: 25px;
+  display: inline-block
+}
+
 /* 
   Nav
 */
@@ -277,6 +327,10 @@ ul {
   position: sticky;
   top: 0;
   z-index: 20;
+}
+
+.nav a {
+  text-decoration: none;
 }
 
 .nav-inner {
