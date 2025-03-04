@@ -454,7 +454,7 @@ a:hover {
 }
 
 .text-img > div {
-    grid-template-columns: span 2;
+    grid-column: span 2;
 }
 .text-img > img {
 }
