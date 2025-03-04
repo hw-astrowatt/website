@@ -404,6 +404,12 @@ a:hover {
   }
 }
 
+@media only screen and (min-width: 768px) {
+  .who-we-are > .who-we-are-img {
+    grid-column: 5 / span 2;
+  }
+}
+
 /* 
   "What We Do" Section
 */
