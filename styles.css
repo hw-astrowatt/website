@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* 
+/*
   Breakpoints:
   - sm: 640px
   - md: 768px
@@ -88,7 +88,7 @@ a:hover {
   opacity: 60%;
 }
 
-/* 
+/*
   utility classes: basic layout
 */
 .container {
@@ -114,7 +114,7 @@ a:hover {
   align-items: center;
 }
 
-/* 
+/*
   utility classes: padding
 */
 .pl-1 {
@@ -149,7 +149,7 @@ a:hover {
   padding-left: 4rem;
 }
 
-/* 
+/*
   utility classes: transition
 */
 .transition-opacity {
@@ -160,7 +160,7 @@ a:hover {
   opacity: 60%;
 }
 
-/* 
+/*
   utility classes: text style
 */
 .text-nowrap {
@@ -179,7 +179,7 @@ a:hover {
   list-style: none;
 }
 
-/* 
+/*
   utility classes: font sizes
 */
 .text-sm {
@@ -216,7 +216,7 @@ a:hover {
   font-size: var(--font-size-900);
 }
 
-/* 
+/*
   utility classes: font weights
 */
 .text-normal {
@@ -227,7 +227,7 @@ a:hover {
   font-weight: 700;
 }
 
-/* 
+/*
   utility classes: colors
 */
 .text-primary-1 {
@@ -319,7 +319,7 @@ a:hover {
   display: inline-block
 }
 
-/* 
+/*
   Nav
 */
 .nav {
@@ -358,7 +358,7 @@ a:hover {
   }
 }
 
-/* 
+/*
   Heading
 */
 .heading-inner-1 {
@@ -385,7 +385,7 @@ a:hover {
   transform: translateY(1.25rem);
 }
 
-/* 
+/*
   "Who We Are" Section
 */
 .who-we-are {
@@ -410,7 +410,7 @@ a:hover {
   }
 }
 
-/* 
+/*
   "What We Do" Section
 */
 .what-we-do {
@@ -442,7 +442,7 @@ a:hover {
   }
 }
 
-/* 
+/*
   "Talk To Us" Section
 */
 .talk-to-us > * + * {
@@ -501,4 +501,9 @@ a:hover {
 
 .talk-to-us .btn .shooting-star {
   max-height: 1.5rem;
+}
+
+.showcase-img {
+  margin-top: -45px;
+  border: 15px solid white;
 }
