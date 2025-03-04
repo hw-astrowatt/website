@@ -386,63 +386,6 @@ a:hover {
 }
 
 /*
-  "Who We Are" Section
-*/
-.who-we-are {
-  display: grid;
-}
-
-@media only screen and (min-width: 768px) {
-  .who-we-are {
-    grid-template-columns: repeat(6, 1fr);
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .who-we-are > * {
-    grid-column: 1 / span 4;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .who-we-are > .who-we-are-img {
-    grid-column: 5 / span 2;
-  }
-}
-
-/*
-  "What We Do" Section
-*/
-.what-we-do {
-  display: grid;
-  gap: 1.5rem;
-}
-
-@media only screen and (min-width: 768px) {
-  .what-we-do {
-    grid-template-columns: repeat(6, 1fr);
-  }
-}
-
-.what-we-do > .shooting-star-round {
-  justify-self: end;
-  transform: translateY(1rem) translateX(-1rem);
-}
-
-@media only screen and (min-width: 768px) {
-  .what-we-do > .shooting-star-round {
-    grid-column: 2 / span 1;
-    transform: translateY(2rem);
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .what-we-do > .what-we-do-inner {
-    grid-column: 3 / span 4;
-  }
-}
-
-/*
   "Talk To Us" Section
 */
 .talk-to-us > * + * {
@@ -503,20 +446,21 @@ a:hover {
   max-height: 1.5rem;
 }
 
+/* Helper for text with image alongside */
 .text-img {
     display: grid;
-    grid-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
 }
 
 .text-img > div {
-    grid-column: span 2;
+    grid-template-columns: span 2;
 }
 .text-img > img {
 }
+
 @media only screen and (max-width: 768px) {
-.text-img {
-    grid-columns: 1fr;
-}
-
-
+    .text-img {
+        grid-template-columns: 1fr;
+    }
 }
