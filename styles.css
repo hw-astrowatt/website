@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* 
+/*
   Breakpoints:
   - sm: 640px
   - md: 768px
@@ -80,15 +80,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
-  text-decoration: none;
   color: var(--color-dark);
+  transition: opacity 0.2s ease;
 }
 
-ul {
-  list-style: none;
+a:hover {
+  opacity: 60%;
 }
 
-/* 
+/*
   utility classes: basic layout
 */
 .container {
@@ -114,7 +114,42 @@ ul {
   align-items: center;
 }
 
-/* 
+/*
+  utility classes: padding
+*/
+.pl-1 {
+  padding-left: 0.5rem;
+}
+
+.pl-2 {
+  padding-left: 1rem;
+}
+
+.pl-3 {
+  padding-left: 1.5rem;
+}
+
+.pl-4 {
+  padding-left: 2rem;
+}
+
+.pl-5 {
+  padding-left: 2.5rem;
+}
+
+.pl-6 {
+  padding-left: 3rem;
+}
+
+.pl-7 {
+  padding-left: 3.5rem;
+}
+
+.pl-8 {
+  padding-left: 4rem;
+}
+
+/*
   utility classes: transition
 */
 .transition-opacity {
@@ -125,7 +160,7 @@ ul {
   opacity: 60%;
 }
 
-/* 
+/*
   utility classes: text style
 */
 .text-nowrap {
@@ -144,7 +179,7 @@ ul {
   list-style: none;
 }
 
-/* 
+/*
   utility classes: font sizes
 */
 .text-sm {
@@ -181,7 +216,7 @@ ul {
   font-size: var(--font-size-900);
 }
 
-/* 
+/*
   utility classes: font weights
 */
 .text-normal {
@@ -192,7 +227,7 @@ ul {
   font-weight: 700;
 }
 
-/* 
+/*
   utility classes: colors
 */
 .text-primary-1 {
@@ -269,7 +304,22 @@ ul {
   opacity: 60%;
 }
 
-/* 
+.list-custom-icon {
+  list-style: none;
+}
+
+.list-custom-icon > .list-group {
+  display: flex;
+  gap: 1rem;
+  align-items: start;
+}
+
+.list-custom-icon > .list-group > .list-marker {
+  width: 25px;
+  display: inline-block
+}
+
+/*
   Nav
 */
 .nav {
@@ -277,6 +327,10 @@ ul {
   position: sticky;
   top: 0;
   z-index: 20;
+}
+
+.nav a {
+  text-decoration: none;
 }
 
 .nav-inner {
@@ -304,7 +358,7 @@ ul {
   }
 }
 
-/* 
+/*
   Heading
 */
 .heading-inner-1 {
@@ -331,58 +385,7 @@ ul {
   transform: translateY(1.25rem);
 }
 
-/* 
-  "Who We Are" Section
-*/
-.who-we-are {
-  display: grid;
-}
-
-@media only screen and (min-width: 768px) {
-  .who-we-are {
-    grid-template-columns: repeat(6, 1fr);
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .who-we-are > * {
-    grid-column: 1 / span 4;
-  }
-}
-
-/* 
-  "What We Do" Section
-*/
-.what-we-do {
-  display: grid;
-  gap: 1.5rem;
-}
-
-@media only screen and (min-width: 768px) {
-  .what-we-do {
-    grid-template-columns: repeat(6, 1fr);
-  }
-}
-
-.what-we-do > .shooting-star-round {
-  justify-self: end;
-  transform: translateY(1rem) translateX(-1rem);
-}
-
-@media only screen and (min-width: 768px) {
-  .what-we-do > .shooting-star-round {
-    grid-column: 2 / span 1;
-    transform: translateY(2rem);
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .what-we-do > .what-we-do-inner {
-    grid-column: 3 / span 4;
-  }
-}
-
-/* 
+/*
   "Talk To Us" Section
 */
 .talk-to-us > * + * {
@@ -441,4 +444,23 @@ ul {
 
 .talk-to-us .btn .shooting-star {
   max-height: 1.5rem;
+}
+
+/* Helper for text with image alongside */
+.text-img {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+}
+
+.text-img > div {
+    grid-column: span 2;
+}
+.text-img > img {
+}
+
+@media only screen and (max-width: 768px) {
+    .text-img {
+        grid-template-columns: 1fr;
+    }
 }
