@@ -1,8 +1,86 @@
-<html>
-    <head>
-        <title="AstroWatt - Reach for the Stars" />
-    </head>
-    <body>
-        <p>Site currently under construction</p>
-    </body>
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <!-- TODO metatags and favicon -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="theme-color" content="#031B39">
+  <title>AstroWatt - Reach for the Stars</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+  <!-- Nav -->
+  <nav class="nav flex-center bg-primary-1">
+    <div class="nav-inner container">
+      <a href="#" class="nav-logo">
+        <img src="/assets/logo.svg" alt="Astrowatt">
+      </a>
+      <ol class="nav-links list-style-none">
+        <li><a href="#who-we-are" class="text-light">who we are</a></li>
+        <li><a href="#what-we-do" class="text-light">what we do</a></li>
+        <li><a href="#talk-to-us" class="text-light">talk to us</a></li>
+      </ol>
+    </div>
+  </nav>
+
+  <div class="container main-container">
+    <!-- Heading -->
+    <h1 class="heading flex-center text-nowrap">
+      <span class="heading-inner-1 text-lg">taking Heriot-Watt</span>
+      <span class="heading-inner-2 text-xl text-bold text-primary-2">
+        <img src="/assets/star.svg" alt="star" class="star-1">
+        <span>to space</span>
+        <img src="/assets/star.svg" alt="star" class="star-2">
+      </span>
+    </h1>
+
+    <!-- "Who We Are" Section -->
+    <section id="who-we-are" class="who-we-are line-height-normal text-justify text-img">
+        <div>
+      <h2 class="text-md text-bold text-dark">who we are</h2>
+      <p>
+        AstroWatt is a coalition of space-focused student engineering teams at Heriot-Watt University. In 2025, the
+        founding societies Heriot-Watt CanSat Team, Heriot-Watt Rocketry Society, Watts-Up, and Heriot-Satt realised
+        that there was an unprecendented opportunity for knowledge and resource sharing across their respective
+        societies, and so AstroWatt was born. By sharing PCB designs, software, and engineering resources, every member
+        society gets to avoid reinventing the wheel and focusing on those elements of their mission that truly matters.
+      </p>
+        </div>
+      <img src="./assets/cansat_2024_launch.jpeg" alt="temp" class="showcase-img">
+    </section>
+
+    <!-- "What We Do" Section -->
+    <section id="what-we-do" class="what-we-do line-height-normal text-justify text-img">
+      <img src="/assets/stress.png" alt="shooting-star" class="showcase-img">
+      <div class="what-we-do-inner">
+        <h2 class="text-md text-bold text-dark">what we do</h2>
+        <p> As a whole, AstroWatt helps co-ordinate funding, opportunities, and technical knowhow across member
+          societies. We also perform educational outreach for local schools and science festivals, such as the event at
+          the <a href="https://dirleton.solar">Dirleton Solar Walk</a> in April this year!
+      </div>
+    </section>
+
+    <!-- "Talk To Us" Section -->
+    <section id="talk-to-us" class="talk-to-us">
+      <h2 class="text-md text-bold text-dark">talk to us</h2>
+
+      <!-- TODO make form work -->
+      <form class="contact-form" action="mailto:hi@astrowatt.space">
+        <input type="text" name="name" placeholder="name" class="form-input">
+        <input type="email" name="email" placeholder="email address" class="form-input">
+        <input type="text" name="subject" placeholder="subject" class="form-input">
+        <textarea name="message" placeholder="message..." class="form-input form-textarea"></textarea>
+        <button type="submit" class="btn bg-primary-2 text-light">
+          <img src="/assets/shooting-star.svg" alt="shooting-star" class="shooting-star">
+          <span>send!</span>
+        </button>
+      </form>
+    </section>
+  </div>
+</body>
+
 </html>
