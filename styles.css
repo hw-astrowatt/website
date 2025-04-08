@@ -464,3 +464,24 @@ a:hover {
         grid-template-columns: 1fr;
     }
 }
+
+/*
+  Footer
+*/
+.footer {
+  min-height: 3rem;
+}
+
+.footer-inner {
+  padding: 1rem 2rem;
+}
+
+.footer-inner > * + * {
+  margin-top: 1rem;
+}
+
+.sponsor-grid {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+}
