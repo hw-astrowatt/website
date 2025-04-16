@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
 /*
   Breakpoints:
@@ -9,11 +9,11 @@
 */
 
 :root {
-  --color-primary-1: #031B39;
-  --color-primary-2: #0A3E65;
-  --color-primary-3: #C4CEDE;
+  --color-primary-1: #031b39;
+  --color-primary-2: #0a3e65;
+  --color-primary-3: #c4cede;
   --color-dark: #000000;
-  --color-light: #FFFFFF;
+  --color-light: #ffffff;
 
   --font-family: "Work Sans", Arial, Helvetica, sans-serif;
 
@@ -30,7 +30,9 @@
   https://www.joshwcomeau.com/css/custom-css-reset/
   With Tweaks
 */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -57,16 +59,29 @@ body {
   }
 }
 
-img, picture, video, canvas, svg {
+img,
+picture,
+video,
+canvas,
+svg {
   display: block;
   max-width: 100%;
 }
 
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
   font: inherit;
 }
 
-p, h1, h2, h3, h4, h5, h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   overflow-wrap: break-word;
 }
 
@@ -74,7 +89,12 @@ p {
   text-wrap: pretty;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   text-wrap: balance;
   font-weight: 400;
 }
@@ -316,7 +336,7 @@ a:hover {
 
 .list-custom-icon > .list-group > .list-marker {
   width: 25px;
-  display: inline-block
+  display: inline-block;
 }
 
 /*
@@ -448,21 +468,21 @@ a:hover {
 
 /* Helper for text with image alongside */
 .text-img {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1rem;
 }
 
 .text-img > div {
-    grid-column: span 2;
+  grid-column: span 2;
 }
 .text-img > img {
 }
 
 @media only screen and (max-width: 768px) {
-    .text-img {
-        grid-template-columns: 1fr;
-    }
+  .text-img {
+    grid-template-columns: 1fr;
+  }
 }
 
 /*
@@ -483,5 +503,6 @@ a:hover {
 .sponsor-grid {
   display: grid;
   gap: 0.5rem;
-  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  /*grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));*/
+  grid-template-columns: auto fit-content(25%) auto;
 }
