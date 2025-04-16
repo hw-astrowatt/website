@@ -504,5 +504,5 @@ a:hover {
   display: grid;
   gap: 0.5rem;
   /*grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));*/
-  grid-template-columns: auto fit-content(25%) auto;
+  grid-template-columns: auto fit-content(150px) auto;
 }
