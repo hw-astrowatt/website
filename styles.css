@@ -120,8 +120,8 @@ a:hover {
 }
 
 .events-container {
-    width: 50%;
-    margin-left: 25%;
+    width: 60%;
+    margin-left: 20%;
 }
 
 .main-container {
@@ -408,6 +408,14 @@ a:hover {
 
 .heading-inner-2 .star-2 {
   transform: translateY(1.25rem);
+}
+
+.heading-inner-2 .star-3 {
+  transform: translateY(0.25rem);
+}
+
+.heading-event {
+    transform: translateY(0.5rem);
 }
 
 /*
