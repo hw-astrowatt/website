@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
+
 /*
   Breakpoints:
   - sm: 640px
@@ -117,6 +118,18 @@ a:hover {
   max-width: 1280px;
   padding: 0 2rem;
   margin: auto;
+}
+
+.events-container {
+    width: 60%;
+    margin-left: 20%;
+}
+
+@media only screen and (max-width: 1080px) {
+  .events-container {
+    width: 100%;
+    margin-left: 0px;
+  }
 }
 
 .main-container {
@@ -360,8 +373,9 @@ a:hover {
   gap: 2.5rem;
 }
 
-.nav-logo {
-  flex-shrink: 0.75;
+.nav-logo > img {
+  flex-shrink: 0.25 ;
+  width: 25%;
 }
 
 .nav-links {
@@ -403,6 +417,18 @@ a:hover {
 
 .heading-inner-2 .star-2 {
   transform: translateY(1.25rem);
+}
+
+.heading-inner-2 .star-3 {
+  transform: translateY(0.25rem);
+}
+
+.heading-event-text {
+    transform: translateY(0.5rem);
+}
+
+.heading-event {
+    margin-bottom: -1.75rem;
 }
 
 /*
@@ -504,4 +530,19 @@ a:hover {
   display: grid;
   gap: 0.5rem;
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+}
+
+.event > p:not(:first-child):not(last-child) {
+    text-indent: 2em;
+}
+
+.event-footer {
+    font-size: 80%;
+    color: grey;
+    margin-top: 0.5rem;
+    text-indent: 0px !important ;
+}
+
+.event-img {
+    margin-bottom: 1rem;
 }
