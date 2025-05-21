@@ -532,7 +532,7 @@ a:hover {
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
 }
 
-.event > p:not(:first-child) {
+.event > p:not(:first-child):not(last-child) {
     text-indent: 2em;
 }
 
