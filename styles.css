@@ -416,8 +416,12 @@ a:hover {
   transform: translateY(0.25rem);
 }
 
-.heading-event {
+.heading-event-text {
     transform: translateY(0.5rem);
+}
+
+.heading-event {
+    margin-bottom: -0.5rem;
 }
 
 /*
