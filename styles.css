@@ -121,8 +121,7 @@ a:hover {
 }
 
 .events-container {
-    width: 100%
-    max-width: 800px;
+    width: 60%;G
     margin-left: 20%;
 }
 
@@ -542,4 +541,8 @@ a:hover {
     color: grey;
     margin-top: 0.5rem;
     text-indent: 0px;
+}
+
+.event-img {
+    margin-bottom: 0.5rem;
 }
