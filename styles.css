@@ -510,3 +510,7 @@ a:hover {
   gap: 0.5rem;
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
 }
+
+#event > p~p {
+    text-indent: 1em;
+}
