@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
+
 /*
   Breakpoints:
   - sm: 640px
@@ -524,6 +525,7 @@ a:hover {
     text-indent: 2em;
 }
 
-hr #header-body {
-    color: var(--colour-primary-1); 
+p #event-footer {
+    font-size: 80%;
+    color: var(--colour-primary-3);
 }
