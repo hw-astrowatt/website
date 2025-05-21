@@ -121,8 +121,16 @@ a:hover {
 }
 
 .events-container {
-    width: 60%;
+    width: 100%
+    max-width: 800px;
     margin-left: 20%;
+}
+
+@media only screen and (max-width: 640px) {
+  .events-container {
+    width: 100%;
+    margin-left: 0px;
+  }
 }
 
 .main-container {
