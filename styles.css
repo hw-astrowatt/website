@@ -361,7 +361,7 @@ a:hover {
 }
 
 .nav-logo {
-  flex-shrink: 0.75;
+  flex-shrink: 0.5 ;
 }
 
 .nav-links {
