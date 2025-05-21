@@ -119,6 +119,11 @@ a:hover {
   margin: auto;
 }
 
+.event-container {
+    width: 50%;
+    margin-left: 25%;
+}
+
 .main-container {
   padding: 3.75rem 2rem 4rem;
 }
