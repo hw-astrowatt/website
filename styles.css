@@ -514,3 +514,7 @@ a:hover {
 #event > p~p {
     text-indent: 1em;
 }
+
+hr #header-body {
+    color: var(--colour-primary-1); 
+}
