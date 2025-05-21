@@ -360,7 +360,7 @@ a:hover {
   gap: 2.5rem;
 }
 
-.nav-logo {
+.nav-logo > img {
   flex-shrink: 0.5 ;
 }
 
