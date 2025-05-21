@@ -527,5 +527,7 @@ a:hover {
 
 p .event-footer {
     font-size: 80%;
-    color: var(--colour-primary-3);
+    color: grey;
+    margin-top: 0.5rem;
+    text-indent: 0px;
 }
