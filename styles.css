@@ -540,7 +540,7 @@ a:hover {
     font-size: 80%;
     color: grey;
     margin-top: 0.5rem;
-    text-indent: 0px;
+    text-indent: 0px !important ;
 }
 
 .event-img {
