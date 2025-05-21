@@ -525,7 +525,7 @@ a:hover {
     text-indent: 2em;
 }
 
-p .event-footer {
+.event-footer {
     font-size: 80%;
     color: grey;
     margin-top: 0.5rem;
