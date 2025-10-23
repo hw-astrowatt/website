@@ -1,0 +1,144 @@
+/* 
+  general
+*/
+.container {
+  display: block;
+  width: 100%;
+  max-width: 1280px;
+  padding: 0;
+  margin: auto;
+}
+
+.lead {
+  color: var(--color-foreground);
+  font-size: min(calc(1rem + 1.75dvw), 2rem);
+  line-height: 1;
+}
+
+.container-padding {
+  padding: 0 1.5rem;
+}
+
+/* 
+  hero section
+*/
+.hero {
+  background: var(--color-background);
+}
+
+/* 
+  header section
+*/
+.header {
+  display: flex;
+  gap: 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .header  {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 0rem;
+  }
+}
+
+.header-logo {
+  object-fit: cover;
+  object-position: top right;
+  height: calc(100px + 15dvw);
+  max-height: 210px;
+  width: 15dvw;
+}
+
+@media only screen and (min-width: 768px) {
+  .header-logo {
+    object-fit: none;
+    max-height: 240px;
+    width: 100%;
+  }
+}
+
+.header-title-container {
+  grid-column: span 4;
+  padding-right: 1.5rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .header-title-container {
+    padding-left: 1.5rem;
+    padding-right: 0;
+  }
+}
+
+.header-title {
+  padding-top: 1.5rem;
+  height: calc(2.5rem + 5dvw);
+  max-height: 85px;
+}
+
+.header-lead {
+  padding-top: 0.5rem;
+}
+
+/* 
+  about us section
+*/
+.about-us-container {
+  padding: 1rem 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 640px) {
+  .about-us-container {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 1rem;
+    padding: 1rem 1.5rem;
+  }
+}
+
+.about-us-description {
+  font-size: 1rem;
+}
+
+@media only screen and (min-width: 640px) {
+  .about-us-description {
+    grid-column: 1 / span 4;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .about-us-description {
+    font-size: 1.25rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .about-us-description {
+    grid-column: 2 / span 4;
+  }
+}
+
+.about-us-image {
+  transform: translateY(2rem);
+}
+
+@media only screen and (min-width: 640px) {
+  .about-us-image {
+    transform: translateY(3rem);
+    align-self: self-end;
+    grid-column: 5 / span 4;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .about-us-image {
+    grid-column: 6 / span 2;
+  }
+}
+
+/* info section */
+.info {
+  padding-top: 3rem;
+}
