@@ -9,11 +9,12 @@
 */
 
 :root {
-  --color-primary-1: #031b39;
-  --color-primary-2: #0a3e65;
-  --color-primary-3: #c4cede;
   --color-dark: #000000;
   --color-light: #ffffff;
+  --color-background: #EAE4DC;
+  --color-foreground: var(--color-dark);
+  --color-primary: #A85822;
+  --color-primary-foreground: var(--color-dark);
 
   --font-family-heading: "Libertinus Mono", Arial, Helvetica, sans-serif;
   --font-family-text: "Libertinus Sans", Arial, Helvetica, sans-serif;
@@ -255,18 +256,6 @@ a:hover {
 /*
   utility classes: colors
 */
-.text-primary-1 {
-  color: var(--color-primary-1);
-}
-
-.text-primary-2 {
-  color: var(--color-primary-2);
-}
-
-.text-primary-3 {
-  color: var(--color-primary-3);
-}
-
 .text-dark {
   color: var(--color-dark);
 }
@@ -275,16 +264,20 @@ a:hover {
   color: var(--color-light);
 }
 
-.bg-primary-1 {
-  background-color: var(--color-primary-1);
+.text-background {
+  color: var(--color-background);
 }
 
-.bg-primary-2 {
-  background-color: var(--color-primary-2);
+.text-foreground {
+  color: var(--color-foreground);
 }
 
-.bg-primary-3 {
-  background-color: var(--color-primary-3);
+.text-primary {
+  color: var(--color-primary);
+}
+
+.text-primary-foreground {
+  color: var(--color-primary-foreground);
 }
 
 .bg-dark {
@@ -293,6 +286,22 @@ a:hover {
 
 .bg-light {
   background-color: var(--color-light);
+}
+
+.bg-background {
+  color: var(--color-background);
+}
+
+.bg-foreground {
+  color: var(--color-foreground);
+}
+
+.bg-primary {
+  color: var(--color-primary);
+}
+
+.bg-primary-foreground {
+  color: var(--color-primary-foreground);
 }
 
 /*
