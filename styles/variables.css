@@ -1,0 +1,27 @@
+/*
+  Breakpoints:
+  - xs: 480px
+  - sm: 640px
+  - md: 768px
+  - lg: 1024px
+  - xl: 1280px
+*/
+
+:root {
+  --color-dark: #000000;
+  --color-light: #ffffff;
+  --color-background: #EAE4DC;
+  --color-foreground: #35251A;
+  --color-primary: #A85822;
+  --color-primary-foreground: #35251A;
+
+  --font-family-heading: "Libertinus Mono", Arial, Helvetica, sans-serif;
+  --font-family-text: "Libertinus Sans", Arial, Helvetica, sans-serif;
+
+  --font-size-400: 1rem;
+  --font-size-500: 1.25rem;
+  --font-size-600: 1.5rem;
+  --font-size-700: 2rem;
+  --font-size-800: 2.5rem;
+  --font-size-900: 4rem;
+}
